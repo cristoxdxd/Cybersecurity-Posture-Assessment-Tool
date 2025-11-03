@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Cybersecurity-Posture-Assessment-Tool"
+version = "0.1.0"
+description = "A comprehensive web application for evaluating organizational cybersecurity posture based on NIST CSF 2.0, CIS Controls v8, and NIST SP 800-53 Rev. 5 frameworks."
+requires-python = ">=3.8,<4.0"
+dependencies = [
+  "Flask==3.0.0",
+  "Flask-SQLAlchemy==3.1.1",
+  "Flask-WTF==1.2.1",
+  "WTForms==3.1.1",
+  "ansible-runner==2.3.4",
+  "ansible==9.1.0",
+  "pandas==2.1.4",
+  "matplotlib==3.8.2",
+  "reportlab==4.0.7",
+  "Werkzeug==3.0.1",
+  "Jinja2==3.1.2",
+]
