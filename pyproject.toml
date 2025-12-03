@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "Cybersecurity-Posture-Assessment-Tool"
 version = "0.1.0"
-description = "A comprehensive web application for evaluating organizational cybersecurity posture based on NIST CSF 2.0, CIS Controls v8, and NIST SP 800-53 Rev. 5 frameworks."
+description = "Web application for evaluating Linux Kernel, Debian OS, and Critical Services using hybrid verification (Manual Evidence + Ansible Automation) based on CIS and STIG."
 requires-python = ">=3.8,<4.0"
 dependencies = [
   "Flask==3.0.0",

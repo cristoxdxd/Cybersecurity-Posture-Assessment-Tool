@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Auditoría de Postura Técnica</h1>
+        <p class="col-md-8 fs-4">Sistema de evaluación para Kernel Linux, Debian y Servicios Críticos. 
+        Combina evidencia manual con validación automatizada.</p>
+        <button class="btn btn-primary btn-lg" type="button">Iniciar Nueva Evaluación</button>
+    </div>
+</div>
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-4">
+        <div class="h-100 p-4 text-white bg-dark rounded-3">
+            <h2>Kernel Hardening</h2>
+            <p>Verificación de parámetros de arranque, módulos cargados y sysctl.</p>
+            <p class="fw-bold">{{ stats.kernel_checks }} controles disponibles</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="h-100 p-4 bg-light border rounded-3">
+            <h2>Debian System</h2>
+            <p>Configuración de usuarios, permisos de archivos, SSH y logs.</p>
+            <p class="fw-bold text-primary">{{ stats.os_checks }} controles disponibles</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="h-100 p-4 text-white bg-secondary rounded-3">
+            <h2>Servicios Críticos</h2>
+            <p>Apache, SQL y Moodle. Validaciones no automatizables.</p>
+            <p class="fw-bold">{{ stats.services_checks }} controles disponibles</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
